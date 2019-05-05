@@ -1,5 +1,6 @@
 import axios from 'axios';
 
+// Request instance to Twitch API
 export default axios.create({
   baseURL: 'https://api.twitch.tv/kraken/',
   headers: {

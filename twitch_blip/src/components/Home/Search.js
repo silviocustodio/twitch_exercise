@@ -40,8 +40,8 @@ class Search extends Component<*, *> {
 
   getErrorMessage = errorMessage =>
     errorMessage === 'Service Unavailable'
-      ? 'Upstream service is unavailable (just try again and again).'
-      : "Something's wrong with the upstream (my dad's fault).";
+      ? 'Upstream service is unavailable (try again).'
+      : "Something's wrong with the upstream.";
 
   componentWillMount = () => {
     for (let i = 1; i <= 100; i += 1) {
@@ -81,7 +81,7 @@ class Search extends Component<*, *> {
             />
           }
           labelPosition="right"
-          placeholder="Which sweet stream are you looking for?"
+          placeholder="Type a stream you are looking for..."
           value={query}
           onChange={this.setQuery}
           fluid

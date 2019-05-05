@@ -12,6 +12,8 @@ class Stream extends Component<*, *> {
   };
 
   componentWillMount = () => {
+    // The viewers count is updated every 10 seconds ;
+
     this.updateViewers();
     setInterval(() => this.updateViewers(), 10000);
   };
@@ -36,7 +38,7 @@ class Stream extends Component<*, *> {
       <Fragment>
         <EditedHeader as="h2" inverted>
           {
-            "If you've time, I will let you watch this whole stream (that's not really good for you health)."
+            'Enjoy this stream! - to return to the home page click on the Twitch logo above.'
           }
         </EditedHeader>
         <Embed

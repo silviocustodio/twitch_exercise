@@ -7,7 +7,7 @@ const Meta = () => (
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" href="/public/favicon.ico" />
     <link rel="manifest" href="/public/manifest.json" />
-    <title>twitchy-son</title>
+    <title>twitch_blip</title>
   </MetaTags>
 );
 
